@@ -56,7 +56,7 @@ export default function ProductList({token}) {
 
       {products.map( (product) => (
         <div key={product._id} className='grid grid-cols-[1fr_3fr_1fr] md:grid-cols-[1fr_3fr_1fr_1fr_1fr] items-center py-1 px-2 border border-gray-300 text-sm my-2'>
-          <img className='w-16 h-16 object-contain' src={product.image} alt={product.name} />
+          <img className='w-16 h-16 object-contain' src={product.image[0]} alt={product.name} />
           <p>{product.name}</p>
           <p>{product.category}</p>
           <p>₹ {product.price}</p>
