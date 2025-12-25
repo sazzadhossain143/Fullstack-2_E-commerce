@@ -10,6 +10,7 @@ import Login from "./pages/Login"
 import Collection from "./pages/Collection"
 import Orders from "./pages/Orders"
 import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
 
 
 
@@ -18,7 +19,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
         <Navbar />
         <Routes>
           {/* Your route definitions go here */}
@@ -32,6 +33,7 @@ function App() {
           <Route path="/login" element={ <Login />} />
 
         </Routes>
+        <Footer />
       </div>
     </>
   )
